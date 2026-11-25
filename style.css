@@ -82,3 +82,13 @@ body{font-family:"Trebuchet MS",Arial,sans-serif;color:var(--ink);background:#ff
 .institutional-logo img{display:block;width:100%;height:96px;object-fit:contain}
 @media(max-width:720px){.institutional-logos{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px 20px;padding:16px}.institutional-logo+.institutional-logo{padding-left:0;border-left:0}.institutional-logo img{height:100px}.institutional-logo:nth-child(5){grid-column:1/-1}.institutional-logo:nth-child(5) img{width:50%}}
 
+/* Language selector shared by every page. */
+.language-switcher{display:flex;align-items:center;gap:2px;flex-shrink:0}
+.language-switcher button{min-width:30px;padding:8px 6px;border:1px solid var(--line);background:var(--paper);color:var(--muted);font:700 10px/1 Arial,Helvetica,sans-serif;letter-spacing:.05em;cursor:pointer}
+.language-switcher button:hover,.language-switcher button:focus-visible{border-color:var(--green);color:var(--green)}
+.language-switcher button.is-active{border-color:var(--green);background:var(--green);color:#fff}
+.language-switcher button:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+@media(max-width:1050px){.header{gap:12px}}
+@media(max-width:720px){.header{gap:6px}.header .official-header{gap:5px}.official-header .brand-symbol{width:35px}.official-header .brand-name{width:clamp(100px,33vw,132px)}.language-switcher{gap:0}.language-switcher button{min-width:25px;padding:7px 4px;font-size:9px}.mobile summary{padding:8px 4px}}
+@media(max-width:360px){.wrap{width:calc(100% - 28px)}.official-header .brand-symbol{width:33px}.official-header .brand-name{width:98px}.mobile summary{padding:6px 2px;font-size:11px}}
+
